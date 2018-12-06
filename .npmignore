@@ -1,0 +1,21 @@
+node_modules/
+.tmp
+.sass-cache
+.idea/
+.DS_Store
+*.pyc
+env/
+npm-debug.log.*
+*.log
+docker-build-temp
+coverage/
+doc/
+stats/
+.env
+.vscode/
+
+
+# npmignore - content above this line is automatically generated and modifications may be omitted
+# see npmjs.com/npmignore for more details.
+src/
+example/

@@ -1,12 +1,13 @@
 {
-  "name": "@danamc/react-compents",
+  "name": "react-antd-compents",
   "version": "1.0.0",
   "description": "react ui compents base on ANTD",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
     "start": "webpack-dev-server --inline --hot --config webpack.config.dev.js",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "republish": "npm publish"
   },
   "keywords": [
     "antd",
@@ -16,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "antd": "^3.11.0",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
