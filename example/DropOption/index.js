@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 //import { DropOption } from "../../dist/index";
 import DropOption from "../../src/Dropdown/index";
 import { Dropdown, Button, Icon, Menu } from "antd";
-import "antd/dist/antd.css";
+
+
 const labelStyle = {  };
 const dropStyle = { "margin-left": "8px" };
 const menuItems = [

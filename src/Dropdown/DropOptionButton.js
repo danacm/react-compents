@@ -1,6 +1,7 @@
 import React,{ Component } from 'react'
 import PropTypes from 'prop-types'
 import { Dropdown,Icon, Menu } from 'antd'
+import 'antd/dist/antd.css';
 
  class DropOptionButton extends Component {
   loopMenu = (data) =>

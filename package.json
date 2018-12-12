@@ -1,6 +1,6 @@
 {
   "name": "react-antd-compents",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react ui compents base on ANTD",
   "main": "dist/index.js",
   "sideEffects": false,

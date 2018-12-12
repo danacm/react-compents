@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { SideNav } from '../../dist/index';
-import 'antd/dist/antd.css';
 const menuItems = [{
   id: 1,
   label: 'Item 1',
   icon: 'setting',
-  animationTime: 250,
   items: [{
     id: 11,
   label: 'Item 1.1',

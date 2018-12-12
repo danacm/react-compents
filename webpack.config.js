@@ -44,13 +44,50 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.(js|mjs|jsx|ts|tsx)$/,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     {
+      //       loader: "babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-0",
+      //       options: { presets: ["react", "es2015","stage-0"] }
+      //     }
+      //   ]
+      // }
       {
         test: /\.(js|mjs|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-0",
-            options: { presets: ["react", "es2015","stage-0"] }
+            loader:
+              "babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-0",
+            options: {
+              presets: ["react", "es2015", "stage-0"],
+              plugins: [
+                [
+                  "import",
+                  {
+                    libraryName: "antd",
+                    style: "css"
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        //antd样式处理
+        test: /\.css$/,
+        exclude: /src/,
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1
+            }
+
           }
         ]
       }
