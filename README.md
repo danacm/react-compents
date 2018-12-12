@@ -1,7 +1,8 @@
 # react-compents
 react compents base on antd
-1、导航菜单
-传入参数和antd一致，传入数据格式为：
+##1、导航菜单
+###传入参数和antd一致，传入数据格式为：
+```javascript
 const menuItems = [{
   id: 1,
   label: 'Item 1',
@@ -18,8 +19,9 @@ const menuItems = [{
     link: '/item12',
   }, ],
 },];
-
-使用：
+```
+###使用：
+```javascript
 import { SideNav } from 'react-antd-compents';
 
 <SideNav
@@ -29,10 +31,12 @@ import { SideNav } from 'react-antd-compents';
           style={{ width: '100%' }}
           onSelect={clickTitle}
         />
-具体示例见example/SideNav
+        ```
+###具体示例见example/SideNav
  
-2、下拉菜单
-传入数据格式为：
+##2、下拉菜单
+###传入数据格式为：
+```javascript
 const menuItems = [
   {
     id: 1,
@@ -54,7 +58,9 @@ const menuItems = [
       }
     ]
   },];
-  使用：
+  ```
+  ###使用：
+  ```javascript
 import { DropOption, } from 'react-antd-compents';
 const clickTitle = e => {
   console.log(`value:`, e);
@@ -73,5 +79,6 @@ const clickTitle = e => {
           style={dropStyle}
           dropdownContent={<span> bottomCenter </span>}
         />
-        />
-具体示例见example/DropOption
+```
+        
+###具体示例见example/DropOption
