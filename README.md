@@ -31,7 +31,7 @@ import { SideNav } from 'react-antd-compents';
           style={{ width: '100%' }}
           onSelect={clickTitle}
         />
-        ```
+```
 ###具体示例见example/SideNav
  
 ##2、下拉菜单
@@ -58,9 +58,9 @@ const menuItems = [
       }
     ]
   },];
-  ```
+```
   ###使用：
-  ```javascript
+```javascript
 import { DropOption, } from 'react-antd-compents';
 const clickTitle = e => {
   console.log(`value:`, e);
