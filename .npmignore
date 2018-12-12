@@ -9,6 +9,7 @@ npm-debug.log.*
 *.log
 docker-build-temp
 coverage/
+dist/
 doc/
 stats/
 .env
