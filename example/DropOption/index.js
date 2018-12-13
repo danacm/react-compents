@@ -126,7 +126,7 @@ class Testcontainer extends Component {
           }
         />
         <DropOption
-          onMenuClick={e => this.clickTitle(record, e)}
+          onMenuClick={e => this.clickTitle(e)}
           menuData={menuItems}
           disabled
           dropdownContent={
@@ -137,7 +137,7 @@ class Testcontainer extends Component {
         />
         <DropOption
           trigger={["contextMenu"]}
-          onMenuClick={e => this.clickTitle(record, e)}
+          onMenuClick={e => this.clickTitle(e)}
           menuData={menuItems}
           dropdownContent={
             <Button style={dropStyle}>
@@ -147,7 +147,7 @@ class Testcontainer extends Component {
         />
         <DropOption
           trigger={["click"]}
-          onMenuClick={e => this.clickTitle(record, e)}
+          onMenuClick={e => this.clickTitle( e)}
           menuData={menuItems}
           dropdownContent={
             <Button style={dropStyle}>
@@ -156,7 +156,7 @@ class Testcontainer extends Component {
           }
         />
         <DropOption
-          onMenuClick={e => this.clickTitle(record, e)}
+          onMenuClick={e => this.clickTitle(e)}
           menuData={menuItems}
           dropdownContent={
             <Button style={dropStyle}>
@@ -165,7 +165,7 @@ class Testcontainer extends Component {
           }
         />
         <DropOption.Button
-          onMenuClick={e => this.clickTitle(record, e)}
+          onMenuClick={e => this.clickTitle(e)}
           menuData={menuItems}
           style={dropStyle}
           dropdownContent={<span> bottomCenter </span>}

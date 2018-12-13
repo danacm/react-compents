@@ -23,7 +23,9 @@ const menuItems = [{
 #### 使用：
 ```javascript
 import { SideNav } from 'react-antd-compents';
-
+const clickTitle = e => {
+  console.log(`value:`, e);
+};
 <SideNav
           menuData={menuItems}
           mode="inline"
@@ -66,7 +68,7 @@ const clickTitle = e => {
   console.log(`value:`, e);
 };
         <DropOption
-          onMenuClick={e => this.clickTitle(record, e)}
+          onMenuClick={e => this.clickTitle( e)}
           menuData={menuItems}
           dropdownContent={
             <Button style={dropStyle}>
@@ -74,7 +76,7 @@ const clickTitle = e => {
             </Button>
           }
                   <DropOption.Button
-          onMenuClick={e => this.clickTitle(record, e)}
+          onMenuClick={e => this.clickTitle(e)}
           menuData={menuItems}
           style={dropStyle}
           dropdownContent={<span> bottomCenter </span>}
